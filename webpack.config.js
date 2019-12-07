@@ -17,13 +17,31 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'awesome-typescript-loader'
-      }
+      },
+      {
+        test: /\.scss$/,
+        use: [{
+          loader: 'style-loader',
+        }, {
+          loader: 'css-loader',
+        }, {
+          loader: 'postcss-loader',
+          options: {
+            plugins: function () {
+              return [
+                require('autoprefixer')
+              ];
+            }
+          }
+        }, {
+          loader: 'sass-loader'
+        }]
+      },
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      minify: true
     })
   ]
 }
