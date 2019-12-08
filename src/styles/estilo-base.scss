@@ -1,0 +1,17 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+%ajuste-tela-principal {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    @extend %ajuste-tela-principal;
+}
+
+div#root{
+    @extend %ajuste-tela-principal;
+}
+
+
