@@ -1,2 +1,39 @@
 @import "./estilo-apresentacao.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+img {
+    position: relative;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+}
+
+#bebida-dados {
+    @extend %fonte;
+    width: 60%;
+    height: 500px;
+    border: 3px solid black;
+    padding: 10px;
+    box-shadow: 5px 6px rgb(0, 0, 0);
+}
+
+h1{
+    font-weight: bold;
+    font-size: 23pt;
+}
+
+.tagline{
+    font-family: times;
+    font-style: italic;
+    font-size: 15pt;
+}
+
+.text-justify{
+    font-family: serif;
+    font-size: 12pt;
+}
+
+button{
+    margin-left: 25%;
+}

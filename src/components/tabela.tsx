@@ -1,7 +1,6 @@
 import * as React from 'react'
 import * as Axios from 'axios'
 import { Link } from 'react-router-dom';
-import { combineReducers } from 'redux';
 
 import '../styles/estilo-tabela.scss'
 import Apresentacao from './apresentacao';
@@ -25,7 +24,7 @@ class Tabela extends React.Component {
 
             <Apresentacao/>
 
-            <table className="table table-bordered table-striped table-hover table-sm">
+            <table id='tabelaDados' className="table table-bordered table-striped table-hover table-sm">
                 <thead>
                     <tr>
                     <th scope="col">Nome</th>
