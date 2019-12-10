@@ -1,0 +1,19 @@
+@import "./estilo-base.scss";
+
+%fonte {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.jumbotron{
+    width: 100%;
+    padding: 40px;
+}
+
+p{
+    @extend %fonte;
+    color: #5e5e5e;
+}
+
+h1{
+    @extend %fonte;
+}
