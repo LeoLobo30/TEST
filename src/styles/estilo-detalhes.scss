@@ -11,8 +11,22 @@ img {
 
 #bebida-dados {
     @extend %fonte;
+    @include media-breakpoint-down(sm) {
+        width: 90%;
+        height: auto;
+    }
+    @include media-breakpoint-down(md) {
+        width: 80%;
+        height: auto;
+    }
+    @include media-breakpoint-down(lg) {
+        width: 70%;
+        height: auto;
+    }
+    position: relative;
     width: 60%;
-    height: 500px;
+    height: 600px;
+    max-width: 600px;
     border: 3px solid black;
     padding: 10px;
     box-shadow: 5px 6px rgb(0, 0, 0);
