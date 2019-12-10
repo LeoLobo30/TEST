@@ -2,6 +2,7 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: './src/index.tsx',
@@ -21,6 +22,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [{
+          loader: ExtractTextPlugin.loader,
           loader: 'style-loader',
         }, {
           loader: 'css-loader',
@@ -42,6 +44,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      filename: 'index.html',
+      minify: {
+        collapseWhitespace: true
+      }
     })
   ],
   devServer: {

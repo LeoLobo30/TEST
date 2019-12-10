@@ -24,19 +24,22 @@ class Tabela extends React.Component {
 
             <Apresentacao/>
 
-            <table id='tabelaDados' className="table table-bordered table-striped table-hover table-sm">
+            <table id='tabelaDados' className="table table-bordered table-striped table-hover table-sm mb-4">
                 <thead>
                     <tr>
                     <th scope="col">Nome</th>
                     <th scope="col">TagLine</th>
-                    <th scope="col">Detalhes</th>
+                    <th className='alinharLinks' scope="col">Detalhes</th>
                     </tr>
                 </thead>
                 <tbody>
                     { this.state.bebidas.map(bebida => <tr>
                         <td>{bebida.name}</td>
                         <td>{bebida.tagline}</td>
-                        <td><Link to={ `detalhes/${bebida.id}` }>Ver</Link></td>
+                        <td className='alinharLinks'>
+                            <Link className='badge badge-secondary'
+                            to={ `detalhes/${bebida.id}` }>Ver</Link>
+                        </td>
                     </tr>) }
                 </tbody>
             </table>

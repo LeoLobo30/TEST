@@ -43,10 +43,9 @@ class Detalhes extends React.Component {
             
             </div>)}
 
-          
-          <button type="button" className="btn btn-outline-secondary mt-5 w-25">
-            <Link to='/'>Voltar</Link>
-            </button>   
+          <Link className="btn btn-outline-secondary mt-5 mb-5 w-25" to='/'>
+            Voltar
+          </Link>
         </div>
       </div>    
     }
