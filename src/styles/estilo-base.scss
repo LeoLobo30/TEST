@@ -6,12 +6,10 @@
     height: 100%;
 }
 
-body{
+body {
     @extend %ajuste-tela-principal;
 }
 
-div#root{
+div#root {
     @extend %ajuste-tela-principal;
 }
-
-

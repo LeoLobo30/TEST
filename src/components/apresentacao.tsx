@@ -8,13 +8,12 @@ class Apresentacao extends React.Component {
 
       <div className="jumbotron">
         <div className="container">
-          <h1 className="display-4">Test Fractal Tecnologia</h1>
-          <p className="lead paragrafo-apresentacao">A aplicação foi desenvolvida com o axilio de outras tecnologias além das requeridas. Como: bootstrap, typescript</p>
+          <h1 className="display-4 titulo">Test Fractal Tecnologia</h1>
+          <p className="lead sub-titulo">A aplicação foi desenvolvida com a ajuda de outras tecnologias além das requeridas.</p>
         </div>
       </div>
-      
 
-    </div>    
+    </div>
   }
 }
 

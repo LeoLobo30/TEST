@@ -4,16 +4,16 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-div.jumbotron{
+div.jumbotron {
     width: 100%;
     padding: 40px;
 }
 
-p{
+.titulo {
     @extend %fonte;
     color: #5e5e5e;
 }
 
-h1{
+.sub-titulo {
     @extend %fonte;
 }
