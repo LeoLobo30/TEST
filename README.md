@@ -11,5 +11,5 @@
 
 ### Aplicação foi desenvolvida usando tecnologias além das requeridas como:
 
-- *typescript* **->** Organizar o código
-- *bootstrap* **->** Agilizar a estrutura do front junto de reponsividade do mesmo
+- *typescript* **->** Organizar melhor o código
+- *bootstrap* **->** Agilizar o estilo do front e implementar melhor a reponsividade
