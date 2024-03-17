@@ -4,7 +4,7 @@
   "description": "projeto para test na Fractal Tecnologia",
   "main": "index.tsx",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^1.6.8",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0",
